@@ -1,1 +1,3 @@
-export * from '../src/RxAx';
+import { IRxAx, RxAx, RxAxInstance } from './RxAx';
+
+export { IRxAx, RxAx, RxAxInstance };

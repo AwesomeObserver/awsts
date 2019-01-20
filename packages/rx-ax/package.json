@@ -5,12 +5,13 @@
   "keywords": [
     "rxjs",
     "axios",
+    "node",
     "typescript"
   ],
   "author": "Evgeny Doronin <me@awesomeobserver.me>",
   "license": "MIT",
   "main": "lib/index.js",
-  "typings": "lib/RxAx.d.ts",
+  "typings": "lib/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
