@@ -1,5 +1,5 @@
 {
-  "name": "rx-ax",
+  "name": "@awesome-observer/rx-ax",
   "version": "1.0.0",
   "description": "RxAx - wrapper over Axios with RxJs.",
   "keywords": [
@@ -10,6 +10,7 @@
   "author": "Evgeny Doronin <me@awesomeobserver.me>",
   "license": "MIT",
   "main": "lib/index.js",
+  "typings": "lib/RxAx.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,6 +18,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "tsc": "tsc"
   },
