@@ -1,0 +1,28 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rules": {
+    "prettier": true,
+    "max-line-length": {
+      "options": [90]
+    },
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "no-implicit-dependencies": false,
+    "no-console": {
+      "severity": "warning",
+      "options": ["debug", "info", "log", "time", "timeEnd", "trace"]
+    },
+    "promise-function-async": [true],
+    "typedef": true,
+    "await-promise": true,
+    "function-constructor": true,
+    "no-var-keyword": true,
+    "triple-equals": true,
+    "arrow-return-shorthand": [true, "multiline"],
+    "class-name": true,
+    "interface-name": [true, "always-prefix"],
+    "increment-decrement": true,
+    "no-unnecessary-callback-wrapper": true
+  }
+}
