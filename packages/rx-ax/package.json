@@ -1,0 +1,29 @@
+{
+  "name": "rx-ax",
+  "version": "0.0.0",
+  "description": "RxAx - wrapper over Axios with RxJs.",
+  "keywords": [
+    "rxjs",
+    "axios",
+    "typescript"
+  ],
+  "author": "Evgeny Doronin <me@awesomeobserver.me>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "peerDependencies": {
+    "rxjs": "^6.3.3"
+  }
+}
