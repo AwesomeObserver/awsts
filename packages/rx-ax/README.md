@@ -6,7 +6,7 @@
 
 RxAx has peer dependency rxjs
 
-```nix
+```shell
 yarn add @awesome-observer/rx-ax rxjs
 or
 npm i @awesome-observer/rx-ax rxjs
