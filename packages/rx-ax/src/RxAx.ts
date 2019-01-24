@@ -7,6 +7,7 @@ import { defer, Observable } from 'rxjs';
  * @interface IRxAx
  */
 interface IRxAx {
+  config: (config: AxiosRequestConfig) => AxiosRequestConfig;
   request: <T = any>(config: AxiosRequestConfig) => Observable<AxiosResponse<T>>;
   get: <T = any>(
     url: string,
@@ -44,9 +45,16 @@ interface IRxAx {
  * @implements {IRxAx}
  */
 class RxAx implements IRxAx {
-  public static rxAxConfig: AxiosRequestConfig;
-
   constructor(private readonly instance: AxiosInstance = Axios) {}
+
+  /**
+   * Return config for Axios
+   *
+   * @param {AxiosRequestConfig} config
+   */
+  public config(config: AxiosRequestConfig): AxiosRequestConfig {
+    return config;
+  }
 
   public request<T = any>(config: AxiosRequestConfig): Observable<AxiosResponse<T>> {
     return defer(() => this.instance.request<T>(config));
