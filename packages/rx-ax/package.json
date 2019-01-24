@@ -1,6 +1,6 @@
 {
   "name": "@awesome-observer/rx-ax",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "RxAx - wrapper over Axios with RxJs.",
   "keywords": [
     "rxjs",
