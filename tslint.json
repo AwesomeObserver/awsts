@@ -1,6 +1,6 @@
 {
   "extends": ["tslint:latest", "tslint-config-prettier"],
-  "rulesDirectory": ["tslint-plugin-prettier"],
+  "rulesDirectory": ["rxjs-tslint", "tslint-plugin-prettier"],
   "rules": {
     "prettier": true,
     "max-line-length": {
@@ -23,6 +23,10 @@
     "class-name": true,
     "interface-name": [true, "always-prefix"],
     "increment-decrement": true,
-    "no-unnecessary-callback-wrapper": true
+    "no-unnecessary-callback-wrapper": true,
+    "rxjs-collapse-imports": true,
+    "rxjs-pipeable-operators-only": true,
+    "rxjs-no-static-observable-methods": true,
+    "rxjs-proper-imports": true
   }
 }
