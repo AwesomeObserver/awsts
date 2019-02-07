@@ -1,6 +1,6 @@
 # `@awesome-observer/rx-ax`
 
-> RxAx - wrapper over Axios with RxJs.
+# RxAx - simple and powerful HTTP request library, based on RxJS and axios.
 
 ## Instalation
 
