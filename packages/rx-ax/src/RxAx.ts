@@ -48,6 +48,7 @@ class RxAx implements IRxAx {
   constructor(private readonly instance: AxiosInstance = Axios) {}
 
   /**
+   *
    * Return config for Axios
    *
    * @param {AxiosRequestConfig} config
@@ -56,10 +57,23 @@ class RxAx implements IRxAx {
     return config;
   }
 
+  /**
+   *
+   * Request method
+   *
+   * @param {AxiosRequestConfig} config
+   */
   public request<T = any>(config: AxiosRequestConfig): Observable<AxiosResponse<T>> {
     return defer(() => this.instance.request<T>(config));
   }
 
+  /**
+   *
+   * Get method
+   *
+   * @param {string} url
+   * @param {AxiosRequestConfig} [config]
+   */
   public get<T = any>(
     url: string,
     config?: AxiosRequestConfig,
@@ -67,6 +81,13 @@ class RxAx implements IRxAx {
     return defer(() => this.instance.get<T>(url, config));
   }
 
+  /**
+   *
+   * Delete method
+   *
+   * @param {string} url
+   * @param {AxiosRequestConfig} [config]
+   */
   public delete<T = any>(
     url: string,
     config?: AxiosRequestConfig,
@@ -74,6 +95,13 @@ class RxAx implements IRxAx {
     return defer(() => this.instance.delete(url, config));
   }
 
+  /**
+   *
+   * Head method
+   *
+   * @param {string} url
+   * @param {AxiosRequestConfig} [config]
+   */
   public head<T = any>(
     url: string,
     config?: AxiosRequestConfig,
@@ -81,6 +109,14 @@ class RxAx implements IRxAx {
     return defer(() => this.instance.head(url, config));
   }
 
+  /**
+   *
+   * Post method
+   *
+   * @param {string} url
+   * @param {*} [data]
+   * @param {AxiosRequestConfig} [config]
+   */
   public post<T = any>(
     url: string,
     data?: any,
@@ -89,6 +125,14 @@ class RxAx implements IRxAx {
     return defer(() => this.instance.post(url, data, config));
   }
 
+  /**
+   *
+   * Put method
+   *
+   * @param {string} url
+   * @param {*} [data]
+   * @param {AxiosRequestConfig} [config]
+   */
   public put<T = any>(
     url: string,
     data?: any,
@@ -97,6 +141,14 @@ class RxAx implements IRxAx {
     return defer(() => this.instance.put(url, data, config));
   }
 
+  /**
+   *
+   * Patch method
+   *
+   * @param {string} url
+   * @param {*} [data]
+   * @param {AxiosRequestConfig} [config]
+   */
   public patch<T = any>(
     url: string,
     data?: any,
