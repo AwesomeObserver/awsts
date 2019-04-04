@@ -1,5 +1,7 @@
 # `@awesome-observer/rx-ax`
 
+[![npm downloads](https://badgen.net/npm/dt/@awesome-observer/rx-ax?icon=npm&color=green)](https://www.npmjs.com/package/@awesome-observer/rx-ax)
+
 # RxAx - simple and powerful HTTP request library, based on RxJS and axios.
 
 ## Instalation
